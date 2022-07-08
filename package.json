@@ -1,0 +1,8 @@
+{
+  "name": "nodejs-babel-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:damiaoterto/nodejs-babel-boilerplate.git",
+  "author": "Francisco Damião Terto <hi@damiaojunior.me>",
+  "license": "MIT"
+}
