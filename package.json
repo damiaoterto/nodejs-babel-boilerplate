@@ -4,5 +4,17 @@
   "main": "index.js",
   "repository": "git@github.com:damiaoterto/nodejs-babel-boilerplate.git",
   "author": "Francisco Damião Terto <hi@damiaojunior.me>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rimraf dist/",
+    "build": "babel src/ --out-dir dist/",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "rimraf": "^3.0.2"
+  }
 }
