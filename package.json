@@ -6,13 +6,15 @@
   "author": "Francisco Damião Terto <hi@damiaojunior.me>",
   "license": "MIT",
   "scripts": {
-    "prebuild": "rimraf dist/",
-    "dev": "nodemon --exec babel-node src/main.js",
-    "build": "babel src/ --out-dir dist/",
-    "start": "node dist/main.js",
-    "lint": "npx eslint --fix src --ext .js"
+    "prebuild": "npx rimraf dist/",
+    "dev": "npx nodemon --exec babel-node -r dotenv/config src/main.js",
+    "build": "npx babel src/ --out-dir dist/",
+    "lint": "npx eslint --fix src --ext .js",
+    "start": "node -r dotenv/config dist/main.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  },
   "devDependencies": {
     "@babel/cli": "^7.18.6",
     "@babel/core": "^7.18.6",
